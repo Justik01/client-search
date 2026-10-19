@@ -68,7 +68,7 @@ tailwind.config = {
 
   <section id="cases" class="py-14 border-t border-ink/10">
     <h2 class="font-display text-2xl sm:text-3xl mb-2 reveal">Кейсы</h2>
-    <p class="text-muted mb-10 reveal">Три задачи из трёх разных: визитка, бот-воронка, рекламная страница.</p>
+    <p class="text-muted mb-10 reveal">Три задачи из трёх разных: визитка, бот-воронка, реклама с оплатой.</p>
 
     <div class="space-y-8">
 
@@ -104,17 +104,29 @@ tailwind.config = {
 
       <article class="bg-white rounded-xl p-6 sm:p-8 border border-ink/10 reveal">
         <div class="flex items-baseline justify-between gap-4 mb-3">
-          <h3 class="font-display text-xl">Страница под рекламу «Анти-грабли»</h3>
-          <span class="text-xs text-muted uppercase tracking-wide shrink-0">Реклама</span>
+          <h3 class="font-display text-xl">«Анти-грабли»: от рекламы до оплаты</h3>
+          <span class="text-xs text-muted uppercase tracking-wide shrink-0">Реклама + бот</span>
         </div>
         <p class="text-muted mb-4">
-          Прелендинг для рекламного трафика: обходит ограничение площадки на
-          упоминания мессенджера, а кнопка ведёт прямо в бота. Meta Pixel отправляет
-          событие Lead с задержкой — beacon успевает уйти до перехода на другой домен,
-          а при блокировке пикселя кнопка всё равно работает.
+          Связал рекламу и бота в один путь клиента. Сначала прелендинг: обходит
+          ограничение площадки на упоминания мессенджера, кнопка ведёт прямо в бота,
+          Meta Pixel отправляет Lead с задержкой — beacon успевает уйти до перехода на
+          другой домен, а при блокировке пикселя кнопка всё равно работает.
+        </p>
+        <p class="text-muted mb-4">
+          Дальше бот-воронка в Salebot — 117 блоков, 158 связей: диагностический тест
+          из 4 вопросов → один из 4 типов с персональным разбором → прогрев с обратным
+          отсчётом к 3-дневному практикуму → три тарифа и оплата через BePaid → ветки
+          «оплата прошла / не прошла» с поддержкой → дожимы со скидками и уведомлением
+          оператору. Внутри же — модерация чата (приветствие, XP-уровни, автоудаление
+          спама), AI-ассистент и аналитика событий.
+        </p>
+        <p class="text-muted mb-4">
+          Реклама → тест → прогрев → оплата работает без ручного участия: заказчик
+          получает оплаты, а не просто подписчиков.
         </p>
         <a href="https://justik01.github.io/antigrabli/" target="_blank" rel="noopener"
-           class="text-accent text-sm hover:underline">Открыть проект →</a>
+           class="text-accent text-sm hover:underline">Открыть прелендинг →</a>
       </article>
 
     </div>

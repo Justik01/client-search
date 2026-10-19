@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Стас — сайты и Telegram-боты под задачу бизнеса</title>
+<meta name="description" content="Делаю лендинги, сайты-визитки и Telegram-ботов: воронки с приёмом заявок. Живые проекты, понятные сроки и цены.">
+<meta property="og:title" content="Стас — сайты и Telegram-боты">
+<meta property="og:description" content="Лендинги, визитки, Telegram-боты с приёмом заявок. Живые проекты и понятные сроки.">
+<meta property="og:type" content="website">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        ink: '#141414',
+        paper: '#faf9f7',
+        accent: '#1f6feb',
+        muted: '#6b6b6b'
+      },
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        display: ['Georgia', 'Times New Roman', 'serif']
+      }
+    }
+  }
+}
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  .reveal { opacity: 0; transform: translateY(14px); transition: opacity .6s ease, transform .6s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; transition: none; }
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body class="bg-paper text-ink font-sans antialiased">
+
+<header class="max-w-3xl mx-auto px-6 pt-8 flex items-center justify-between text-sm">
+  <span class="tracking-wide">Стас — сайты и боты</span>
+  <nav class="flex gap-5 text-muted">
+    <a href="#cases" class="hover:text-ink transition">Кейсы</a>
+    <a href="#how" class="hover:text-ink transition">Как работаю</a>
+    <a href="#contact" class="hover:text-ink transition">Контакты</a>
+  </nav>
+</header>
+
+<main class="max-w-3xl mx-auto px-6">
+
+  <section class="pt-20 pb-16 sm:pt-28 sm:pb-24">
+    <p class="text-accent text-sm uppercase tracking-[0.18em] mb-5 reveal">Веб-разработка и Telegram</p>
+    <h1 class="font-display text-3xl sm:text-5xl leading-[1.15] mb-6 reveal">
+      Сайты и боты, которые приносят заявки, а не лежат «просто красивыми».
+    </h1>
+    <p class="text-lg text-muted max-w-xl reveal">
+      Делаю лендинги и сайты-визитки, а также Telegram-ботов с приёмом заявок:
+      человек приходит, понимает предложение и оставляет контакт — а вы получаете
+      уведомление. Показываю живые примеры, сроки и цену называю заранее.
+    </p>
+    <div class="mt-8 flex flex-wrap gap-3 reveal">
+      <a href="#contact" class="bg-ink text-paper px-5 py-3 rounded-lg text-sm font-medium hover:bg-black transition">Написать о задаче</a>
+      <a href="#cases" class="border border-ink/15 px-5 py-3 rounded-lg text-sm font-medium hover:border-ink/40 transition">Посмотреть кейсы</a>
+    </div>
+  </section>
+
+  <section id="cases" class="py-14 border-t border-ink/10">
+    <h2 class="font-display text-2xl sm:text-3xl mb-2 reveal">Кейсы</h2>
+    <p class="text-muted mb-10 reveal">Три задачи из трёх разных: визитка, бот-воронка, рекламная страница.</p>
+
+    <div class="space-y-8">
+
+      <article class="bg-white rounded-xl p-6 sm:p-8 border border-ink/10 reveal">
+        <div class="flex items-baseline justify-between gap-4 mb-3">
+          <h3 class="font-display text-xl">Лендинг для коуча-психолога</h3>
+          <span class="text-xs text-muted uppercase tracking-wide shrink-0">Сайт</span>
+        </div>
+        <p class="text-muted mb-4">
+          Одностраничный сайт-визитка: представить специалиста, услуги и вести к записи
+          на консультацию. Вёрстка на HTML + Tailwind, адаптив под телефон, SEO и
+          Open Graph-мета — при отправке ссылки в мессенджере она выглядит как
+          полноценная карточка. Запуск на GitHub Pages.
+        </p>
+        <a href="https://justik01.github.io/anna-martinovich/" target="_blank" rel="noopener"
+           class="text-accent text-sm hover:underline">Открыть проект →</a>
+      </article>
+
+      <article class="bg-white rounded-xl p-6 sm:p-8 border border-ink/10 reveal">
+        <div class="flex items-baseline justify-between gap-4 mb-3">
+          <h3 class="font-display text-xl">Telegram-бот-воронка для специалиста</h3>
+          <span class="text-xs text-muted uppercase tracking-wide shrink-0">Бот</span>
+        </div>
+        <p class="text-muted mb-4">
+          Бот проводит человека из Instagram до заявки на консультацию: при /start
+          стартует серия из 8 прогревающих постов по таймингам, любая активность
+          пользователя останавливает серию. Под постами — кнопки «Задать вопрос» и
+          «Запись», анкета с проверкой полей, уведомления админам и просмотр заявок
+          командой /leads. Расписание переживает перезапуски.
+        </p>
+        <span class="text-sm text-muted">Разработка — готов к запуску.</span>
+      </article>
+
+      <article class="bg-white rounded-xl p-6 sm:p-8 border border-ink/10 reveal">
+        <div class="flex items-baseline justify-between gap-4 mb-3">
+          <h3 class="font-display text-xl">Страница под рекламу «Анти-грабли»</h3>
+          <span class="text-xs text-muted uppercase tracking-wide shrink-0">Реклама</span>
+        </div>
+        <p class="text-muted mb-4">
+          Прелендинг для рекламного трафика: обходит ограничение площадки на
+          упоминания мессенджера, а кнопка ведёт прямо в бота. Meta Pixel отправляет
+          событие Lead с задержкой — beacon успевает уйти до перехода на другой домен,
+          а при блокировке пикселя кнопка всё равно работает.
+        </p>
+        <a href="https://justik01.github.io/antigrabli/" target="_blank" rel="noopener"
+           class="text-accent text-sm hover:underline">Открыть проект →</a>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="how" class="py-14 border-t border-ink/10">
+    <h2 class="font-display text-2xl sm:text-3xl mb-10 reveal">Как работаю</h2>
+    <ol class="space-y-6">
+      <li class="flex gap-4 reveal">
+        <span class="font-display text-accent text-lg w-6 shrink-0">1</span>
+        <p class="text-muted"><span class="text-ink">Сначала вопросы.</span> Если задача размытая — задам 2–3 конкретных вопроса, чтобы потом не переделывать.</p>
+      </li>
+      <li class="flex gap-4 reveal">
+        <span class="font-display text-accent text-lg w-6 shrink-0">2</span>
+        <p class="text-muted"><span class="text-ink">Срок и цена сразу.</span> После первого разговора называю и срок, и сумму. Если по ходу всплывает новое — говорю об этом до начала работ, а не в конце.</p>
+      </li>
+      <li class="flex gap-4 reveal">
+        <span class="font-display text-accent text-lg w-6 shrink-0">3</span>
+        <p class="text-muted"><span class="text-ink">Смотрите результат до финала.</span> Показываю ссылку на готовую страницу или тестового бота до приёмки. Правки по текстам и картинкам могу взять на себя.</p>
+      </li>
+      <li class="flex gap-4 reveal">
+        <span class="font-display text-accent text-lg w-6 shrink-0">4</span>
+        <p class="text-muted"><span class="text-ink">Запуск и передача.</span> Ставлю на хостинг, объясняю, где что правится. Дальше можно работать поэтапно или поддерживать.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section id="contact" class="py-14 border-t border-ink/10 pb-24">
+    <h2 class="font-display text-2xl sm:text-3xl mb-4 reveal">Расскажите о задаче</h2>
+    <p class="text-muted mb-8 max-w-xl reveal">
+      Напишите пару строк: что нужно (сайт, бот, правка) и к какому сроку.
+      Отвечу с первыми вопросами и ориентиром по цене — бесплатно и без обязательств.
+    </p>
+    <!-- ЗАМЕНИТЬ: реальный ник до публикации -->
+    <a href="https://t.me/USERNAME_ZAMENIT"
+       class="inline-flex items-center gap-2 bg-ink text-paper px-6 py-3.5 rounded-lg font-medium hover:bg-black transition reveal">
+      Написать в Telegram
+    </a>
+  </section>
+
+</main>
+
+<footer class="border-t border-ink/10 py-8 text-center text-sm text-muted">
+  © 2026 Стас. Сайты и Telegram-боты.
+</footer>
+
+<script>
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>

@@ -9,6 +9,10 @@
 <meta property="og:description" content="Чат-боты, воронки, интеграции и сайты для экспертов и онлайн-школ. Живые проекты и понятные сроки.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://justik01.github.io/client-search/assets/stas-portrait.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23141414'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='36' fill='%23faf9f7' text-anchor='middle'%3E%D0%A1%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
 tailwind.config = {
@@ -22,7 +26,7 @@ tailwind.config = {
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
-        display: ['Georgia', 'Times New Roman', 'serif']
+        display: ['"Instrument Serif"', 'Georgia', 'serif']
       }
     }
   }
@@ -54,66 +58,75 @@ tailwind.config = {
 <main class="max-w-3xl mx-auto px-6">
 
   <section class="pt-14 pb-16 sm:pt-20 sm:pb-24">
-    <div class="grid sm:grid-cols-[1fr_auto] gap-10 sm:gap-12 items-center">
+    <div class="grid sm:grid-cols-[1fr_auto] gap-10 sm:gap-12 lg:gap-16 items-center">
       <div>
-        <p class="text-accent text-sm uppercase tracking-[0.18em] mb-5 reveal">Автоматизация и разработка</p>
-        <h1 class="font-display text-3xl sm:text-4xl lg:text-5xl leading-[1.15] mb-6 reveal">
-          Автоматизирую работу с клиентами для экспертов и онлайн-школ.
+        <p class="inline-flex items-center gap-2 border border-ink/15 rounded-full pl-2 pr-4 py-1.5 text-sm text-muted mb-7 reveal">
+          <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+          Открыт к новым проектам
+        </p>
+        <h1 class="font-display text-4xl sm:text-5xl lg:text-[3.6rem] leading-[1.12] mb-6 reveal">
+          Автоматизирую работу с клиентами<br class="hidden sm:block">
+          <em class="not-italic text-accent">для экспертов и онлайн-школ.</em>
         </h1>
-        <p class="text-lg text-muted max-w-xl reveal">
+        <p class="text-lg text-muted max-w-xl mb-8 reveal">
           Чат-боты, воронки, рассылки, интеграции с CRM и платежами, сайты.
           Если процесс приходится выполнять вручную снова и снова, скорее всего
           его можно автоматизировать. Не делаю «бота ради бота». Сначала разбираюсь,
           какую проблему нужно решить, и только потом предлагаю реализацию.
         </p>
-        <div class="mt-8 flex flex-wrap gap-3 reveal">
-          <a href="#contact" class="bg-ink text-paper px-5 py-3 rounded-lg text-sm font-medium hover:bg-black transition">Написать о задаче</a>
-          <a href="#cases" class="border border-ink/15 px-5 py-3 rounded-lg text-sm font-medium hover:border-ink/40 transition">Посмотреть кейсы</a>
+        <div class="flex flex-wrap gap-3 reveal">
+          <a href="#contact" class="bg-ink text-paper px-6 py-3.5 rounded-lg text-sm font-medium hover:bg-black transition shadow-lg shadow-ink/10 hover:shadow-xl hover:shadow-ink/15 hover:-translate-y-0.5">Написать о задаче</a>
+          <a href="#cases" class="border border-ink/15 px-6 py-3.5 rounded-lg text-sm font-medium hover:border-ink/40 hover:bg-white transition">Посмотреть кейсы</a>
         </div>
       </div>
-      <figure class="reveal justify-self-center sm:justify-self-end w-64 sm:w-72 lg:w-80 shrink-0">
+      <figure class="relative reveal justify-self-center sm:justify-self-end w-60 sm:w-72 lg:w-80 shrink-0">
         <picture>
           <source srcset="assets/stas-portrait.webp" type="image/webp">
           <img src="assets/stas-portrait.jpg" alt="Станислав Гудков" width="920" height="1150"
                class="w-full h-auto rounded-2xl" loading="eager" decoding="async">
         </picture>
+        <figcaption class="absolute -bottom-4 -left-4 sm:-left-6 bg-white border border-ink/10 rounded-xl px-4 py-2.5 shadow-lg shadow-ink/10">
+          <p class="text-sm font-medium leading-tight">Станислав Гудков</p>
+          <p class="text-xs text-muted leading-tight mt-0.5">чат-боты и автоматизация</p>
+        </figcaption>
       </figure>
     </div>
   </section>
 
-  <section id="services" class="py-14 border-t border-ink/10">
-    <h2 class="font-display text-2xl sm:text-3xl mb-2 reveal">Что делаю</h2>
-    <p class="text-muted mb-10 reveal">Задачи, с которыми ко мне приходят чаще всего.</p>
+  <section id="services" class="py-16 border-t border-ink/10">
+    <p class="text-accent text-sm uppercase tracking-[0.18em] mb-3 reveal">Услуги</p>
+    <h2 class="font-display text-3xl sm:text-4xl mb-10 reveal">Что делаю</h2>
     <div class="grid sm:grid-cols-2 gap-4">
-      <div class="bg-white rounded-xl p-5 border border-ink/10 reveal">
+      <div class="bg-white rounded-xl p-6 border border-ink/10 hover:border-ink/25 hover:shadow-lg hover:shadow-ink/5 transition reveal">
         <h3 class="font-medium mb-2">Чат-боты в Telegram</h3>
         <p class="text-sm text-muted">Сбор заявок и контактов, квалификация, выдача материалов после регистрации или оплаты, приём платежей.</p>
       </div>
-      <div class="bg-white rounded-xl p-5 border border-ink/10 reveal">
+      <div class="bg-white rounded-xl p-6 border border-ink/10 hover:border-ink/25 hover:shadow-lg hover:shadow-ink/5 transition reveal">
         <h3 class="font-medium mb-2">Воронки и рассылки</h3>
         <p class="text-sm text-muted">Прогрев новых клиентов, автоматические серии сообщений, сегментация аудитории по действиям.</p>
       </div>
-      <div class="bg-white rounded-xl p-5 border border-ink/10 reveal">
+      <div class="bg-white rounded-xl p-6 border border-ink/10 hover:border-ink/25 hover:shadow-lg hover:shadow-ink/5 transition reveal">
         <h3 class="font-medium mb-2">Интеграции</h3>
         <p class="text-sm text-muted">Связка бота с CRM, платёжными системами, таблицами и другими сервисами. Данные ходят сами.</p>
       </div>
-      <div class="bg-white rounded-xl p-5 border border-ink/10 reveal">
+      <div class="bg-white rounded-xl p-6 border border-ink/10 hover:border-ink/25 hover:shadow-lg hover:shadow-ink/5 transition reveal">
         <h3 class="font-medium mb-2">Сайты</h3>
         <p class="text-sm text-muted">Лендинги и сайты-визитки: вёрстка, адаптив под телефон, мета-теги, запуск на хостинге.</p>
       </div>
-      <div class="bg-white rounded-xl p-5 border border-ink/10 reveal">
+      <div class="bg-white rounded-xl p-6 border border-ink/10 hover:border-ink/25 hover:shadow-lg hover:shadow-ink/5 transition reveal">
         <h3 class="font-medium mb-2">AI-ассистенты</h3>
         <p class="text-sm text-muted">Консультанты и помощники на LLM: отвечают на вопросы клиентов внутри бота и в чате.</p>
       </div>
-      <div class="bg-white rounded-xl p-5 border border-ink/10 reveal">
+      <div class="bg-white rounded-xl p-6 border border-ink/10 hover:border-ink/25 hover:shadow-lg hover:shadow-ink/5 transition reveal">
         <h3 class="font-medium mb-2">Разбор процесса</h3>
         <p class="text-sm text-muted">Если непонятно, что автоматизировать, разбираю текущий процесс и предлагаю решение с ценой и сроком.</p>
       </div>
     </div>
   </section>
 
-  <section id="cases" class="py-14 border-t border-ink/10">
-    <h2 class="font-display text-2xl sm:text-3xl mb-2 reveal">Кейсы</h2>
+  <section id="cases" class="py-16 border-t border-ink/10">
+    <p class="text-accent text-sm uppercase tracking-[0.18em] mb-3 reveal">Портфолио</p>
+    <h2 class="font-display text-3xl sm:text-4xl mb-3 reveal">Кейсы</h2>
     <p class="text-muted mb-10 reveal">Три задачи из трёх разных: визитка, бот-воронка, реклама с оплатой.</p>
 
     <div class="space-y-8">
@@ -178,33 +191,34 @@ tailwind.config = {
     </div>
   </section>
 
-  <section id="price" class="py-14 border-t border-ink/10">
-    <h2 class="font-display text-2xl sm:text-3xl mb-2 reveal">Цены</h2>
+  <section id="price" class="py-16 border-t border-ink/10">
+    <p class="text-accent text-sm uppercase tracking-[0.18em] mb-3 reveal">Стоимость</p>
+    <h2 class="font-display text-3xl sm:text-4xl mb-4 reveal">Цены</h2>
     <p class="text-muted mb-10 reveal">Итоговую сумму называю после брифа, она зависит от объёма и готовности материалов.
       Ориентиры по уровням сложности:</p>
     <div class="space-y-4">
-      <div class="bg-white rounded-xl p-5 border border-ink/10 flex flex-wrap items-baseline justify-between gap-3 reveal">
+      <div class="bg-white rounded-xl p-5 sm:p-6 border border-ink/10 flex flex-wrap items-baseline justify-between gap-3 hover:border-ink/25 hover:shadow-lg hover:shadow-ink/5 transition reveal">
         <div class="pr-4">
           <h3 class="font-medium">Стандартный бот</h3>
           <p class="text-sm text-muted">Бот-визитка, выдача материалов, запись, простая воронка, сбор контактов. Есть понятное ТЗ.</p>
         </div>
         <span class="font-display text-xl text-accent whitespace-nowrap">50–150$</span>
       </div>
-      <div class="bg-white rounded-xl p-5 border border-ink/10 flex flex-wrap items-baseline justify-between gap-3 reveal">
+      <div class="bg-white rounded-xl p-5 sm:p-6 border border-ink/10 flex flex-wrap items-baseline justify-between gap-3 hover:border-ink/25 hover:shadow-lg hover:shadow-ink/5 transition reveal">
         <div class="pr-4">
           <h3 class="font-medium">Индивидуальная воронка</h3>
           <p class="text-sm text-muted">Несколько сценариев, сегментация пользователей, нестандартная логика, интеграции.</p>
         </div>
         <span class="font-display text-xl text-accent whitespace-nowrap">150–300$</span>
       </div>
-      <div class="bg-white rounded-xl p-5 border border-ink/10 flex flex-wrap items-baseline justify-between gap-3 reveal">
+      <div class="bg-white rounded-xl p-5 sm:p-6 border border-ink/10 flex flex-wrap items-baseline justify-between gap-3 hover:border-ink/25 hover:shadow-lg hover:shadow-ink/5 transition reveal">
         <div class="pr-4">
           <h3 class="font-medium">Сложная автоматизация</h3>
           <p class="text-sm text-muted">API, несколько сервисов, CRM, личный кабинет, много сценариев и тестирования.</p>
         </div>
         <span class="font-display text-xl text-accent whitespace-nowrap">300–500$</span>
       </div>
-      <div class="bg-white rounded-xl p-5 border border-ink/10 flex flex-wrap items-baseline justify-between gap-3 reveal">
+      <div class="bg-white rounded-xl p-5 sm:p-6 border border-ink/10 flex flex-wrap items-baseline justify-between gap-3 hover:border-ink/25 hover:shadow-lg hover:shadow-ink/5 transition reveal">
         <div class="pr-4">
           <h3 class="font-medium">AI-проекты</h3>
           <p class="text-sm text-muted">AI-консультанты и менеджеры, интеграции с LLM, где ИИ — основная ценность.</p>
@@ -219,23 +233,24 @@ tailwind.config = {
     </p>
   </section>
 
-  <section id="how" class="py-14 border-t border-ink/10">
-    <h2 class="font-display text-2xl sm:text-3xl mb-10 reveal">Как работаю</h2>
+  <section id="how" class="py-16 border-t border-ink/10">
+    <p class="text-accent text-sm uppercase tracking-[0.18em] mb-3 reveal">Процесс</p>
+    <h2 class="font-display text-3xl sm:text-4xl mb-10 reveal">Как работаю</h2>
     <ol class="space-y-6">
-      <li class="flex gap-4 reveal">
-        <span class="font-display text-accent text-lg w-6 shrink-0">1</span>
+      <li class="flex gap-5 reveal">
+        <span class="font-display text-accent text-2xl w-7 shrink-0 leading-none pt-0.5">1</span>
         <p class="text-muted"><span class="text-ink">Разбираюсь в задаче.</span> Сначала понимаю, какую проблему решаем и каким должен быть результат. Не продаю проект, который мне не подходит, и не обещаю того, за что не отвечаю.</p>
       </li>
-      <li class="flex gap-4 reveal">
-        <span class="font-display text-accent text-lg w-6 shrink-0">2</span>
+      <li class="flex gap-5 reveal">
+        <span class="font-display text-accent text-2xl w-7 shrink-0 leading-none pt-0.5">2</span>
         <p class="text-muted"><span class="text-ink">Предлагаю решение и называю цену.</span> Задача → как предлагаю её решить → что изменится → объём, сроки и стоимость. Цена фиксируется до начала работ.</p>
       </li>
-      <li class="flex gap-4 reveal">
-        <span class="font-display text-accent text-lg w-6 shrink-0">3</span>
+      <li class="flex gap-5 reveal">
+        <span class="font-display text-accent text-2xl w-7 shrink-0 leading-none pt-0.5">3</span>
         <p class="text-muted"><span class="text-ink">Работаю по этапам.</span> После каждого этапа показываю результат. Если в процессе появляется новая задача, отдельно оцениваю её стоимость и срок.</p>
       </li>
-      <li class="flex gap-4 reveal">
-        <span class="font-display text-accent text-lg w-6 shrink-0">4</span>
+      <li class="flex gap-5 reveal">
+        <span class="font-display text-accent text-2xl w-7 shrink-0 leading-none pt-0.5">4</span>
         <p class="text-muted"><span class="text-ink">Сдаю и объясняю.</span> Тестирую основные сценарии, передаю доступы и инструкцию. Ошибка в рамках согласованного функционала исправляется бесплатно.</p>
       </li>
     </ol>
@@ -246,17 +261,19 @@ tailwind.config = {
     </p>
   </section>
 
-  <section id="contact" class="py-14 border-t border-ink/10 pb-24">
-    <h2 class="font-display text-2xl sm:text-3xl mb-4 reveal">Расскажите о задаче</h2>
-    <p class="text-muted mb-8 max-w-xl reveal">
-      Напишите пару строк: чем занимаетесь и какую задачу хотите решить.
-      Отвечу первыми вопросами и назову ориентир по цене и сроку бесплатно
-      и без обязательств.
-    </p>
-    <a href="https://t.me/Justik01"
-       class="inline-flex items-center gap-2 bg-ink text-paper px-6 py-3.5 rounded-lg font-medium hover:bg-black transition reveal">
-      Написать в Telegram
-    </a>
+  <section id="contact" class="py-16 border-t border-ink/10 pb-20">
+    <div class="bg-ink text-paper rounded-2xl px-7 py-12 sm:px-12 sm:py-16 reveal">
+      <h2 class="font-display text-3xl sm:text-4xl mb-4">Расскажите о задаче</h2>
+      <p class="text-paper/70 mb-8 max-w-xl">
+        Напишите пару строк: чем занимаетесь и какую задачу хотите решить.
+        Отвечу первыми вопросами и назову ориентир по цене и сроку бесплатно
+        и без обязательств.
+      </p>
+      <a href="https://t.me/Justik01"
+         class="inline-flex items-center gap-2 bg-paper text-ink px-6 py-3.5 rounded-lg font-medium hover:bg-white transition">
+        Написать в Telegram
+      </a>
+    </div>
   </section>
 
 </main>

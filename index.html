@@ -127,23 +127,51 @@ tailwind.config = {
   <section id="cases" class="py-16 border-t border-ink/10">
     <p class="text-accent text-sm uppercase tracking-[0.18em] mb-3 reveal">Портфолио</p>
     <h2 class="font-display text-3xl sm:text-4xl mb-3 reveal">Кейсы</h2>
-    <p class="text-muted mb-10 reveal">Три задачи из трёх разных: визитка, бот-воронка, реклама с оплатой.</p>
+    <p class="text-muted mb-10 reveal">Разбираю три проекта: что просили, что я сделал и что получилось.</p>
 
     <div class="space-y-8">
 
       <article class="bg-white rounded-xl p-6 sm:p-8 border border-ink/10 reveal">
-        <div class="flex items-baseline justify-between gap-4 mb-3">
+        <div class="flex items-baseline justify-between gap-4 mb-6">
           <h3 class="font-display text-xl">Лендинг для коуча-психолога</h3>
-          <span class="text-xs text-muted uppercase tracking-wide shrink-0">Сайт</span>
+          <span class="text-xs text-muted uppercase tracking-wide shrink-0">Сайт · 300 $</span>
         </div>
-        <p class="text-muted mb-4">
-          Одностраничный сайт-визитка: представить специалиста, услуги и вести к записи
-          на консультацию. Вёрстка на HTML + Tailwind, адаптив под телефон, SEO и
-          Open Graph-мета — при отправке ссылки в мессенджере она выглядит как
-          полноценная карточка. Запуск на GitHub Pages.
-        </p>
+
+        <div class="space-y-6">
+          <div>
+            <p class="text-accent text-xs uppercase tracking-[0.18em] mb-2">1. Был запрос</p>
+            <p class="text-muted">
+              Анна — коуч-психолог, запускала рекламу в Facebook. Нужен простой лендинг,
+              который знакомит посетителя и ведёт его в Telegram-бота на бесплатную
+              стратегическую сессию. Своего дизайна нет, структуру блоков она описала сама,
+              визуал подсмотрен в её инстаграме. Первый лендинг в жизни — часть работы была
+              не в вёрстке, а в подсказках: что вообще должно быть на странице и почему.
+            </p>
+          </div>
+
+          <div>
+            <p class="text-accent text-xs uppercase tracking-[0.18em] mb-2">2. Было сделано</p>
+            <ul class="text-muted space-y-2 list-disc pl-5 marker:text-ink/30">
+              <li>Разобрал её структуру и предложил доработку: усилить первый экран под рекламу, добавить блок «что вас ждёт в боте», «как проходит работа» и «частые вопросы» — снимаю сомнения перед записью.</li>
+              <li>Первый вариант собрал за день после получения материалов и фото.</li>
+              <li>Вместо платной подписки Tilda собрал сайт статикой: HTML + Tailwind, запуск бесплатный, постоянных расходов у клиентки нет. Адаптив под телефон, SEO и Open Graph — ссылка в мессенджере выглядит как полноценная карточка.</li>
+              <li>Все кнопки «Записаться» ведут в её бота.</li>
+              <li>Правки вносил в день обращения: клиентка присылала скриншоты с выделениями — к вечеру всё было готово.</li>
+            </ul>
+          </div>
+
+          <div class="bg-ink/[0.03] rounded-lg p-5">
+            <p class="text-accent text-xs uppercase tracking-[0.18em] mb-2">3. Получили результат</p>
+            <ul class="text-muted space-y-2 list-disc pl-5 marker:text-ink/30">
+              <li>Сайт готов, первый круг правок отработан за один день, идёт финальная проверка у наставника клиентки.</li>
+              <li>У клиентки появилась страница, которая ведёт посетителя от рекламы до записи в бота — без подписок и платных сервисов.</li>
+              <li>Сделка, отложенная на месяц, всё же состоялась: держал контакт и предложил помощь по автоматизации, когда она вернулась — оплата пришла в тот же день, и мы сразу взялись за работу.</li>
+            </ul>
+          </div>
+        </div>
+
         <a href="https://justik01.github.io/anna-martinovich/" target="_blank" rel="noopener"
-           class="text-accent text-sm hover:underline">Открыть проект →</a>
+           class="inline-block mt-6 text-accent text-sm hover:underline">Открыть проект →</a>
       </article>
 
       <article class="bg-white rounded-xl p-6 sm:p-8 border border-ink/10 reveal">

@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Стас — сайты и Telegram-боты под задачу бизнеса</title>
-<meta name="description" content="Делаю лендинги, сайты-визитки и Telegram-ботов: воронки с приёмом заявок. Живые проекты, понятные сроки и цены.">
-<meta property="og:title" content="Стас — сайты и Telegram-боты">
-<meta property="og:description" content="Лендинги, визитки, Telegram-боты с приёмом заявок. Живые проекты и понятные сроки.">
+<title>Стас — автоматизация, чат-боты и сайты для экспертов</title>
+<meta name="description" content="Чат-боты, воронки, рассылки, интеграции с CRM и платежами, сайты для экспертов и онлайн-школ. Живые проекты, понятные сроки и цены.">
+<meta property="og:title" content="Стас — автоматизация и разработка">
+<meta property="og:description" content="Чат-боты, воронки, интеграции и сайты для экспертов и онлайн-школ. Живые проекты и понятные сроки.">
 <meta property="og:type" content="website">
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
@@ -40,9 +40,11 @@ tailwind.config = {
 <body class="bg-paper text-ink font-sans antialiased">
 
 <header class="max-w-3xl mx-auto px-6 pt-8 flex items-center justify-between text-sm">
-  <span class="tracking-wide">Стас — сайты и боты</span>
+  <span class="tracking-wide">Стас — автоматизация и разработка</span>
   <nav class="flex gap-5 text-muted">
+    <a href="#services" class="hover:text-ink transition">Услуги</a>
     <a href="#cases" class="hover:text-ink transition">Кейсы</a>
+    <a href="#price" class="hover:text-ink transition">Цены</a>
     <a href="#how" class="hover:text-ink transition">Как работаю</a>
     <a href="#contact" class="hover:text-ink transition">Контакты</a>
   </nav>
@@ -51,18 +53,50 @@ tailwind.config = {
 <main class="max-w-3xl mx-auto px-6">
 
   <section class="pt-20 pb-16 sm:pt-28 sm:pb-24">
-    <p class="text-accent text-sm uppercase tracking-[0.18em] mb-5 reveal">Веб-разработка и Telegram</p>
+    <p class="text-accent text-sm uppercase tracking-[0.18em] mb-5 reveal">Автоматизация и разработка</p>
     <h1 class="font-display text-3xl sm:text-5xl leading-[1.15] mb-6 reveal">
-      Сайты и боты, которые приносят заявки, а не лежат «просто красивыми».
+      Автоматизирую работу с клиентами для экспертов и онлайн-школ.
     </h1>
     <p class="text-lg text-muted max-w-xl reveal">
-      Делаю лендинги и сайты-визитки, а также Telegram-ботов с приёмом заявок:
-      человек приходит, понимает предложение и оставляет контакт — а вы получаете
-      уведомление. Показываю живые примеры, сроки и цену называю заранее.
+      Чат-боты, воронки, рассылки, интеграции с CRM и платежами, сайты.
+      Если процесс приходится выполнять вручную снова и снова, скорее всего
+      его можно автоматизировать. Не делаю «бота ради бота». Сначала разбираюсь,
+      какую проблему нужно решить, и только потом предлагаю реализацию.
     </p>
     <div class="mt-8 flex flex-wrap gap-3 reveal">
       <a href="#contact" class="bg-ink text-paper px-5 py-3 rounded-lg text-sm font-medium hover:bg-black transition">Написать о задаче</a>
       <a href="#cases" class="border border-ink/15 px-5 py-3 rounded-lg text-sm font-medium hover:border-ink/40 transition">Посмотреть кейсы</a>
+    </div>
+  </section>
+
+  <section id="services" class="py-14 border-t border-ink/10">
+    <h2 class="font-display text-2xl sm:text-3xl mb-2 reveal">Что делаю</h2>
+    <p class="text-muted mb-10 reveal">Задачи, с которыми ко мне приходят чаще всего.</p>
+    <div class="grid sm:grid-cols-2 gap-4">
+      <div class="bg-white rounded-xl p-5 border border-ink/10 reveal">
+        <h3 class="font-medium mb-2">Чат-боты в Telegram</h3>
+        <p class="text-sm text-muted">Сбор заявок и контактов, квалификация, выдача материалов после регистрации или оплаты, приём платежей.</p>
+      </div>
+      <div class="bg-white rounded-xl p-5 border border-ink/10 reveal">
+        <h3 class="font-medium mb-2">Воронки и рассылки</h3>
+        <p class="text-sm text-muted">Прогрев новых клиентов, автоматические серии сообщений, сегментация аудитории по действиям.</p>
+      </div>
+      <div class="bg-white rounded-xl p-5 border border-ink/10 reveal">
+        <h3 class="font-medium mb-2">Интеграции</h3>
+        <p class="text-sm text-muted">Связка бота с CRM, платёжными системами, таблицами и другими сервисами. Данные ходят сами.</p>
+      </div>
+      <div class="bg-white rounded-xl p-5 border border-ink/10 reveal">
+        <h3 class="font-medium mb-2">Сайты</h3>
+        <p class="text-sm text-muted">Лендинги и сайты-визитки: вёрстка, адаптив под телефон, мета-теги, запуск на хостинге.</p>
+      </div>
+      <div class="bg-white rounded-xl p-5 border border-ink/10 reveal">
+        <h3 class="font-medium mb-2">AI-ассистенты</h3>
+        <p class="text-sm text-muted">Консультанты и помощники на LLM: отвечают на вопросы клиентов внутри бота и в чате.</p>
+      </div>
+      <div class="bg-white rounded-xl p-5 border border-ink/10 reveal">
+        <h3 class="font-medium mb-2">Разбор процесса</h3>
+        <p class="text-sm text-muted">Если непонятно, что автоматизировать, разбираю текущий процесс и предлагаю решение с ценой и сроком.</p>
+      </div>
     </div>
   </section>
 
@@ -110,8 +144,8 @@ tailwind.config = {
         <p class="text-muted mb-4">
           Связал рекламу и бота в один путь клиента. Сначала прелендинг: обходит
           ограничение площадки на упоминания мессенджера, кнопка ведёт прямо в бота,
-          Meta Pixel отправляет Lead с задержкой — beacon успевает уйти до перехода на
-          другой домен, а при блокировке пикселя кнопка всё равно работает.
+          Meta Pixel отправляет событие Lead с задержкой, чтобы оно успело уйти до
+          перехода на другой домен; при блокировке пикселя кнопка всё равно работает.
         </p>
         <p class="text-muted mb-4">
           Дальше бот-воронка в Salebot — 117 блоков, 158 связей: диагностический тест
@@ -132,33 +166,80 @@ tailwind.config = {
     </div>
   </section>
 
+  <section id="price" class="py-14 border-t border-ink/10">
+    <h2 class="font-display text-2xl sm:text-3xl mb-2 reveal">Цены</h2>
+    <p class="text-muted mb-10 reveal">Итоговую сумму называю после брифа, она зависит от объёма и готовности материалов.
+      Ориентиры по уровням сложности:</p>
+    <div class="space-y-4">
+      <div class="bg-white rounded-xl p-5 border border-ink/10 flex flex-wrap items-baseline justify-between gap-3 reveal">
+        <div class="pr-4">
+          <h3 class="font-medium">Стандартный бот</h3>
+          <p class="text-sm text-muted">Бот-визитка, выдача материалов, запись, простая воронка, сбор контактов. Есть понятное ТЗ.</p>
+        </div>
+        <span class="font-display text-xl text-accent whitespace-nowrap">50–150$</span>
+      </div>
+      <div class="bg-white rounded-xl p-5 border border-ink/10 flex flex-wrap items-baseline justify-between gap-3 reveal">
+        <div class="pr-4">
+          <h3 class="font-medium">Индивидуальная воронка</h3>
+          <p class="text-sm text-muted">Несколько сценариев, сегментация пользователей, нестандартная логика, интеграции.</p>
+        </div>
+        <span class="font-display text-xl text-accent whitespace-nowrap">150–300$</span>
+      </div>
+      <div class="bg-white rounded-xl p-5 border border-ink/10 flex flex-wrap items-baseline justify-between gap-3 reveal">
+        <div class="pr-4">
+          <h3 class="font-medium">Сложная автоматизация</h3>
+          <p class="text-sm text-muted">API, несколько сервисов, CRM, личный кабинет, много сценариев и тестирования.</p>
+        </div>
+        <span class="font-display text-xl text-accent whitespace-nowrap">300–500$</span>
+      </div>
+      <div class="bg-white rounded-xl p-5 border border-ink/10 flex flex-wrap items-baseline justify-between gap-3 reveal">
+        <div class="pr-4">
+          <h3 class="font-medium">AI-проекты</h3>
+          <p class="text-sm text-muted">AI-консультанты и менеджеры, интеграции с LLM, где ИИ — основная ценность.</p>
+        </div>
+        <span class="font-display text-xl text-accent whitespace-nowrap">от 500$</span>
+      </div>
+    </div>
+    <p class="text-sm text-muted mt-6 reveal">
+      В стоимость входит: анализ задачи, проектирование логики, разработка, настройка стандартных функций,
+      тестирование, исправление ошибок, обучение и поддержка в согласованный период.
+      Не входит: продающие тексты, дизайн, настройка рекламы, контент. Это обсуждаем отдельно.
+    </p>
+  </section>
+
   <section id="how" class="py-14 border-t border-ink/10">
     <h2 class="font-display text-2xl sm:text-3xl mb-10 reveal">Как работаю</h2>
     <ol class="space-y-6">
       <li class="flex gap-4 reveal">
         <span class="font-display text-accent text-lg w-6 shrink-0">1</span>
-        <p class="text-muted"><span class="text-ink">Сначала вопросы.</span> Если задача размытая — задам 2–3 конкретных вопроса, чтобы потом не переделывать.</p>
+        <p class="text-muted"><span class="text-ink">Разбираюсь в задаче.</span> Сначала понимаю, какую проблему решаем и каким должен быть результат. Не продаю проект, который мне не подходит, и не обещаю того, за что не отвечаю.</p>
       </li>
       <li class="flex gap-4 reveal">
         <span class="font-display text-accent text-lg w-6 shrink-0">2</span>
-        <p class="text-muted"><span class="text-ink">Срок и цена сразу.</span> После первого разговора называю и срок, и сумму. Если по ходу всплывает новое — говорю об этом до начала работ, а не в конце.</p>
+        <p class="text-muted"><span class="text-ink">Предлагаю решение и называю цену.</span> Задача → как предлагаю её решить → что изменится → объём, сроки и стоимость. Цена фиксируется до начала работ.</p>
       </li>
       <li class="flex gap-4 reveal">
         <span class="font-display text-accent text-lg w-6 shrink-0">3</span>
-        <p class="text-muted"><span class="text-ink">Смотрите результат до финала.</span> Показываю ссылку на готовую страницу или тестового бота до приёмки. Правки по текстам и картинкам могу взять на себя.</p>
+        <p class="text-muted"><span class="text-ink">Работаю по этапам.</span> После каждого этапа показываю результат. Если в процессе появляется новая задача, отдельно оцениваю её стоимость и срок.</p>
       </li>
       <li class="flex gap-4 reveal">
         <span class="font-display text-accent text-lg w-6 shrink-0">4</span>
-        <p class="text-muted"><span class="text-ink">Запуск и передача.</span> Ставлю на хостинг, объясняю, где что правится. Дальше можно работать поэтапно или поддерживать.</p>
+        <p class="text-muted"><span class="text-ink">Сдаю и объясняю.</span> Тестирую основные сценарии, передаю доступы и инструкцию. Ошибка в рамках согласованного функционала исправляется бесплатно.</p>
       </li>
     </ol>
+    <p class="text-sm text-muted mt-8 reveal">
+      Работа начинается после согласования объёма, оплаты и получения материалов.
+      Стандартное условие — 100% предоплата; для крупных проектов можно разбить оплату 50/50.
+      Отвечаю в Telegram, пн–пт 10:00–20:00 по Москве.
+    </p>
   </section>
 
   <section id="contact" class="py-14 border-t border-ink/10 pb-24">
     <h2 class="font-display text-2xl sm:text-3xl mb-4 reveal">Расскажите о задаче</h2>
     <p class="text-muted mb-8 max-w-xl reveal">
-      Напишите пару строк: что нужно (сайт, бот, правка) и к какому сроку.
-      Отвечу с первыми вопросами и ориентиром по цене — бесплатно и без обязательств.
+      Напишите пару строк: чем занимаетесь и какую задачу хотите решить.
+      Отвечу первыми вопросами и назову ориентир по цене и сроку бесплатно
+      и без обязательств.
     </p>
     <a href="https://t.me/Justik01"
        class="inline-flex items-center gap-2 bg-ink text-paper px-6 py-3.5 rounded-lg font-medium hover:bg-black transition reveal">
@@ -169,7 +250,7 @@ tailwind.config = {
 </main>
 
 <footer class="border-t border-ink/10 py-8 text-center text-sm text-muted">
-  © 2026 Стас. Сайты и Telegram-боты.
+  © 2026 Стас. Автоматизация и разработка.
 </footer>
 
 <script>

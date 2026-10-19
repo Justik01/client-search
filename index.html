@@ -179,24 +179,51 @@ tailwind.config = {
       </article>
 
       <article class="bg-white rounded-xl p-6 sm:p-8 border border-ink/10 reveal">
-        <div class="flex items-baseline justify-between gap-4 mb-3">
-          <h3 class="font-display text-xl">Telegram-бот-воронка для специалиста</h3>
+        <div class="flex items-baseline justify-between gap-4 mb-6">
+          <h3 class="font-display text-xl">Прогревающий Telegram-бот для эксперта</h3>
           <span class="text-xs text-muted uppercase tracking-wide shrink-0">Бот</span>
         </div>
-        <p class="text-muted mb-4">
-          Бот проводит человека из Instagram до заявки на консультацию: при /start
-          стартует серия из 8 прогревающих постов по таймингам, любая активность
-          пользователя останавливает серию. Под постами — кнопки «Задать вопрос» и
-          «Запись», анкета с проверкой полей, уведомления админам и просмотр заявок
-          командой /leads. Расписание переживает перезапуски.
-        </p>
-        <div class="rounded-lg overflow-hidden border border-ink/10 mb-4">
+
+        <div class="space-y-6">
+          <div>
+            <p class="text-accent text-xs uppercase tracking-[0.18em] mb-2">1. Был запрос</p>
+            <p class="text-muted">
+              Ольга — специалист, ведёт аудиторию в Instagram. Люди смотрят её контент,
+              но из инстаграма они не сразу переходят в Telegram и тем более не сразу
+              записываются на консультацию. Нужен способ провести человека до заявки
+              самому, без ручных переписок: Ольга не может лично писать каждому
+              вступившему — на это нет времени, и человек за это время холодеет.
+            </p>
+          </div>
+
+          <div>
+            <p class="text-accent text-xs uppercase tracking-[0.18em] mb-2">2. Что я сделал</p>
+            <ul class="text-muted space-y-2 list-disc pl-5 marker:text-ink/30">
+              <li>Бот при первом входе запускает серию из 8 полезных постов с паузами между ними — человек постепенно знакомится со специалистом, а не получает продажу сразу.</li>
+              <li>Как только человек сам проявил активность — нажал кнопку или написал, — серия останавливается. Бот не навязывается и не продолжает давить.</li>
+              <li>Под каждым постом две кнопки: «Задать вопрос» и «Записаться». Вопрос сразу уходит Ольге уведомлением.</li>
+              <li>Запись — короткая анкета из трёх полей с проверкой ввода, чтобы до Ольги доходили заявки с настоящими контактами, а не пустые сообщения.</li>
+              <li>Все заявки видны в одном месте одной командой, без поиска по перепискам.</li>
+              <li>Бот работает без присмотра: переживает перезапуски сервера, расписание постов не теряется, а тексты постов Ольга может править сама без программиста.</li>
+            </ul>
+          </div>
+
+          <div class="bg-ink/[0.03] rounded-lg p-5">
+            <p class="text-accent text-xs uppercase tracking-[0.18em] mb-2">3. Результат</p>
+            <ul class="text-muted space-y-2 list-disc pl-5 marker:text-ink/30">
+              <li>Пока Ольга занята работой с клиентами, бот ведёт новичков сам: прогрев идёт по расписанию, заявки не теряются и не ждут её свободного часа.</li>
+              <li>Человек получает ответ и внимание в любое время суток, а не когда у специалиста найдётся минута.</li>
+              <li>Ольга видит все заявки и вопросы в одном месте и отвечает только на то, где нужен живой разговор.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="rounded-lg overflow-hidden border border-ink/10 mt-6">
           <video src="assets/brag.mp4" controls preload="metadata"
                  class="w-full h-auto block" playsinline>
             Видео с демо бота не поддерживается вашим браузером.
           </video>
         </div>
-        <span class="text-sm text-muted">Разработка — готов к запуску.</span>
       </article>
 
       <article class="bg-white rounded-xl p-6 sm:p-8 border border-ink/10 reveal">

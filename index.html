@@ -34,6 +34,12 @@ tailwind.config = {
 </script>
 <style>
   html { scroll-behavior: smooth; }
+  * { -webkit-tap-highlight-color: transparent; }
+  @media (hover: none) {
+    a:active, button:active { opacity: .65; }
+    .hover\:-translate-y-0\.5:hover { transform: none !important; }
+    .hover\:shadow-xl:hover, .hover\:shadow-lg:hover { box-shadow: none !important; }
+  }
   .reveal { opacity: 0; transform: translateY(14px); transition: opacity .6s ease, transform .6s ease; }
   .reveal.in { opacity: 1; transform: none; }
   @media (prefers-reduced-motion: reduce) {
@@ -46,13 +52,16 @@ tailwind.config = {
 
 <header class="max-w-3xl mx-auto px-6 pt-8 flex items-center justify-between text-sm">
   <span class="tracking-wide">Станислав Гудков</span>
-  <nav class="flex gap-5 text-muted">
-    <a href="#services" class="hover:text-ink transition">Услуги</a>
-    <a href="#cases" class="hover:text-ink transition">Кейсы</a>
-    <a href="#price" class="hover:text-ink transition">Цены</a>
-    <a href="#how" class="hover:text-ink transition">Как работаю</a>
-    <a href="#contact" class="hover:text-ink transition">Контакты</a>
-  </nav>
+  <div class="flex items-center gap-5">
+    <nav class="hidden sm:flex gap-5 text-muted">
+      <a href="#services" class="hover:text-ink transition">Услуги</a>
+      <a href="#cases" class="hover:text-ink transition">Кейсы</a>
+      <a href="#price" class="hover:text-ink transition">Цены</a>
+      <a href="#how" class="hover:text-ink transition">Как работаю</a>
+      <a href="#contact" class="hover:text-ink transition">Контакты</a>
+    </nav>
+    <a href="#contact" class="sm:hidden text-ink font-medium">Написать</a>
+  </div>
 </header>
 
 <main class="max-w-3xl mx-auto px-6">
